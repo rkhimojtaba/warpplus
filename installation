@@ -54,15 +54,12 @@ sudo systemctl enable --now wg-quick@warp
 For Marzban Node is enough to step 10
 Far Marzban Main Panel the following step must be performed
 
-11. -------------------------------------------------------------------------------------------------------------------------------------------------
 
-cd marzban
+11.-------------------------------------------------------------------------------------------------------------------------------------------------
+
+nano /opt/marzban/xray_config.json
 
 12.-------------------------------------------------------------------------------------------------------------------------------------------------
-
-nano xray_config.json
-
-13.-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Delete the codes from the beginning of "outbounds" to the end and replace the following codes
 If you want to exclude a site from Warp, put the domain address in the domain field between double quotes like "yahoo.com"
