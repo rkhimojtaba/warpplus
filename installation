@@ -16,8 +16,9 @@ nano wgcf-account.toml
 
 4.-------------------------------------------------------------------------------------------------------------------------------------------------
 
-Insert The Warp+ License
-save (Ctrl+X y Inetr)
+Insert The Warp+ License between '' like below:
+license_key = '0F9i2RE8-q0n8M6R7-230ztB7B'
+now you must save (Ctrl+X y Inter)
 (You can get the warp+ License form this Telegram bot : https://t.me/generatewarpplusbot)
 
 5.-------------------------------------------------------------------------------------------------------------------------------------------------
@@ -30,7 +31,7 @@ wgcf generate
 nano wgcf-profile.conf
 insert  the below line before [peer]
 Table = off
-save (Ctrl+X y Inetr)
+save (Ctrl+X y Inter)
 
 7.-------------------------------------------------------------------------------------------------------------------------------------------------
 
