@@ -54,18 +54,30 @@ sudo systemctl enable --now wg-quick@warp
 For Marzban Node is enough to step 10
 Far Marzban Main Panel the following step must be performed
 
+11. -------------------------------------------------------------------------------------------------------------------------------------------------
 
-11.-------------------------------------------------------------------------------------------------------------------------------------------------
-
-nano /opt/marzban/xray_config.json
+cd marzban
 
 12.-------------------------------------------------------------------------------------------------------------------------------------------------
+
+nano xray_config.json
+
+13.-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Delete the codes from the beginning of "outbounds" to the end and replace the following codes
 If you want to exclude a site from Warp, put the domain address in the domain field between double quotes like "yahoo.com"
 and seprate this domains with Comma (,)
 
 "outbounds": [
+    {
+       "protocol": "freedom",
+       "settings": {},
+       "tag": "direct"
+    },
+    {
+      "protocol": "blackhole",
+      "tag": "blackhole"
+    },
     {
       "tag": "warp",
       "protocol": "freedom",
@@ -77,21 +89,12 @@ and seprate this domains with Comma (,)
       }
     },
     {
-      "protocol": "blackhole",
-      "tag": "blackhole"
-    },
-    {
       "tag": "DNS-Internal",
       "protocol": "dns",
       "settings": {
         "address": "127.0.0.53",
         "port": 53
       }
-    },
-    {
-      "tag": "IP-SABET",
-      "protocol": "freedom",
-      "settings": {}
     }
   ],
   "routing": {
@@ -118,16 +121,15 @@ and seprate this domains with Comma (,)
         ]
       },
       {
-        "outboundTag": "IP-SABET",
-        "domain": [
-          "آدرس سایتی که میخواهید از وارپ عبور نکند",
-          "آدرس سایت بعدی"
-        ],
-        "type": "field"
-      }
+           "outboundTag": "warp",
+           "domain": [
+                         "آدرس سایتی که میخواهید از وارپ عبور کند",
+            "آدرس سایت بعدی"
+                        "نمونه"
+               "google.com",
+               "spotify.com"
+           ],
+           "type": "field"
+       }
     ]
   }
-}
-
-
-
