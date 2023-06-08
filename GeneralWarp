@@ -1,3 +1,9 @@
+=============== General Warp ===============
+
+If you want to pass all traffic through Warp, use this method.
+in this method you can exclude some sites from warp.
+Do not forget that the traffic of Iranian sites is also warped.
+
 1.-------------------------------------------------------------------------------------------------------------------------------------------------
 
 wget https://github.com/ViRb3/wgcf/releases/download/v2.2.16/wgcf_2.2.16_linux_amd64
