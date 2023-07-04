@@ -36,7 +36,9 @@ wgcf generate
 
 nano wgcf-profile.conf
 # insert  the below line before [peer]
+
 Table = off
+
 # save (Ctrl+X y Enter)
 
 7.-------------------------------------------------------------------------------------------------------------------------------------------------
@@ -59,7 +61,7 @@ sudo cp wgcf-profile.conf /etc/wireguard/warp.conf
 sudo systemctl enable --now wg-quick@warp
 
 # For Marzban Node is enough to step 10
-# Far Marzban Main Panel the following step must be performed
+# For Marzban Main Panel the following steps must be performed
 
 
 11.-------------------------------------------------------------------------------------------------------------------------------------------------
