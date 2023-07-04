@@ -1,6 +1,6 @@
 =============== Selective Warp ===============
 
-If you want to pass only the traffic of the selected sites through the warp, use this method.
+# If you want to pass only the traffic of the selected sites through the warp, use this method.
 
 1.-------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -20,10 +20,10 @@ nano wgcf-account.toml
 
 4.-------------------------------------------------------------------------------------------------------------------------------------------------
 
-Insert The Warp+ License between '' like below:
+# Insert The Warp+ License between '' like below:
 license_key = '0F9i2RE8-q0n8M6R7-230ztB7B'
-now you must save (Ctrl+X y Inter)
-(You can get the warp+ License form this Telegram bot : https://t.me/generatewarpplusbot)
+# now you must save (Ctrl+X y Enter)
+# (You can get the warp+ License form this Telegram bot : https://t.me/generatewarpplusbot)
 
 5.-------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -33,9 +33,11 @@ wgcf generate
 6.-------------------------------------------------------------------------------------------------------------------------------------------------
 
 nano wgcf-profile.conf
-insert  the below line before [peer]
+# insert  the below line before [peer]
+
 Table = off
-save (Ctrl+X y Inter)
+
+# save (Ctrl+X y Enter)
 
 7.-------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -45,8 +47,8 @@ mkdir /etc/wireguard
 
 sudo apt install wireguard-dkms wireguard-tools resolvconf
 
-then inter y and inter
-if you recieved Abort repeat this step
+# then inter y and Enter
+# if you recieved Abort repeat this step
 
 9.-------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -56,8 +58,8 @@ sudo cp wgcf-profile.conf /etc/wireguard/warp.conf
 
 sudo systemctl enable --now wg-quick@warp
 
-For Marzban Node is enough to step 10
-Far Marzban Main Panel the following step must be performed
+# For Marzban Node is enough to step 10
+# For Marzban Main Panel the following steps must be performed
 
 
 11.-------------------------------------------------------------------------------------------------------------------------------------------------
@@ -66,9 +68,8 @@ nano /opt/marzban/xray_config.json
 
 12.-------------------------------------------------------------------------------------------------------------------------------------------------
 
-Delete the codes from the beginning of "outbounds" to the end and replace the following codes
-If you want to pass the traffic of a site (or sites) through Warp, put the domain address in the domain field between double quotes like "yahoo.com"
-and seprate this domains with Comma (,)
+# Delete the codes from the beginning of "outbounds" to the end and replace the following codes
+# If you want to pass the traffic of a site (or sites) through Warp, put the domain address in the domain field between double quotes like "yahoo.com" and seprate this domains with Comma (,)
 
 "outbounds": [
     {
