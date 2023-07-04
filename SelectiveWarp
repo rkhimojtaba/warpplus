@@ -48,7 +48,7 @@ mkdir /etc/wireguard
 
 sudo apt install wireguard-dkms wireguard-tools resolvconf
 
-# then inter y and Enter
+# then press Y and Enter
 # if you recieved Abort repeat this step
 
 9.-------------------------------------------------------------------------------------------------------------------------------------------------
