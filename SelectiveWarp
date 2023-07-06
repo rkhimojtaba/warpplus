@@ -106,7 +106,7 @@ nano /opt/marzban/xray_config.json
     "rules": [
       {
         "type": "field",
-        "outboundTag": "block",
+        "outboundTag": "blackhole",
         "ip": [
           "geoip:private"
         ]
@@ -119,7 +119,7 @@ nano /opt/marzban/xray_config.json
       },
       {
         "type": "field",
-        "outboundTag": "block",
+        "outboundTag": "blackhole",
         "protocol": [
           "bittorrent"
         ]
