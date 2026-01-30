@@ -4,10 +4,10 @@
 
 1.-------------------------------------------------------------------------------------------------------------------------------------------------
 
-wget https://github.com/ViRb3/wgcf/releases/download/v2.2.30/wgcf_2.2.30_freebsd_amd64
-chmod +x wgcf_2.2.30_freebsd_amd64
-mv wgcf_2.2.30_freebsd_amd64 /usr/bin/wgcf
-rm wgcf_2.2.30_freebsd_amd64
+wget https://github.com/ViRb3/wgcf/releases/download/v2.2.30/wgcf_2.2.30_linux_386
+chmod +x wgcf_2.2.30_linux_386
+mv wgcf_2.2.30_linux_386 /usr/bin/wgcf
+rm wgcf_2.2.30_linux_386
 
 2.-------------------------------------------------------------------------------------------------------------------------------------------------
 
